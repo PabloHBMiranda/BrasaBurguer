@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tela_Principal">
+
+    />
+
+    <ImageView
+        android:id="@+id/iconBurguer"
+        android:layout_width="362dp"
+        android:layout_height="396dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/iconburguer" />
+
+    <TextView
+        android:id="@+id/selecione"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SELECIONE: "
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:layout_below="@id/iconBurguer"
+        android:fontFamily="@font/jurabook"
+        android:layout_marginTop="50dp"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+
+<LinearLayout
+    android:id="@id/linear1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/selecione"
+    android:layout_centerInParent="true"
+    android:layout_marginTop="50dp">
+    <Button
+        android:id="@+id/btnExtrato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="3dp"
+        android:fontFamily="@font/jurademibold"
+        android:backgroundTint="@color/black"
+        android:text="EXTRATO" />
+
+    <Button
+        android:id="@+id/btnProdutos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/jurademibold"
+        android:backgroundTint="@color/black"
+        android:text="PRODUTOS" />
+</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/linear1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        >
+
+        <Button
+            android:id="@+id/btnPedidos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:layout_marginRight="5dp"
+            android:fontFamily="@font/jurademibold"
+            android:text="PEDIDOS" />
+
+        <Button
+            android:id="@+id/btnClientes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:fontFamily="@font/jurademibold"
+            android:text="CLIENTES" />
+    </LinearLayout>
+
+</RelativeLayout>
